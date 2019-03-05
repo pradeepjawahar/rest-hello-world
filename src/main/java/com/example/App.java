@@ -23,6 +23,9 @@ public class App {
         jerseyServlet.setInitParameter(
            "jersey.config.server.provider.classnames",
            Entrypoint.class.getCanonicalName());
+        jerseyServlet.setInitParameter(
+           "jersey.config.server.provider.classnames",
+           GeoPoint.class.getCanonicalName());
 
         try {
             jettyServer.start();

@@ -20,14 +20,12 @@ repositories {
 }
 
 dependencies {
-    // This dependency is found on compile classpath of this component and consumers.
+    // This dependency is found on implementation classpath of this component and consumers.
     implementation 'com.google.guava:guava:27.0.1-jre'
-    compile        'org.eclipse.jetty:jetty-server:9.2.3.v20140905'
-    compile        'org.eclipse.jetty:jetty-servlet:9.2.3.v20140905'
-    compile        'org.glassfish.jersey.core:jersey-server:2.7'
-    compile        'org.glassfish.jersey.containers:jersey-container-servlet-core:2.7'
-    compile        'org.glassfish.jersey.containers:jersey-container-jetty-http:2.7'
-    compile        'org.glassfish.jersey.media:jersey-media-moxy:2.7'
+    implementation 'org.eclipse.jetty:jetty-server:9.2.3.v20140905'
+    implementation 'org.eclipse.jetty:jetty-servlet:9.2.3.v20140905'
+    implementation 'org.glassfish.jersey.core:jersey-server:2.7'
+    implementation 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.7'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
